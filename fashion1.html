@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE Fashion</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background-image:url("luxe.jpeg");
+            background-size:80%;
+            background-repeat:no-repeat;
+            background-position:center top;
+            background-color:#808080;
+            min-height:100vh;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .navbar{
+            background:rgba(128,128,128,0.85) !important;
+            backdrop-filter:blur(10px);
+            position:fixed;
+            width:100%;
+            top:0;
+            z-index:1000;
+        }
+
+        .nav-link,
+        .navbar-brand{
+            color:white !important;
+            font-weight:500;
+        }
+
+        .nav-link:hover{
+            color:#dcdcdc !important;
+        }
+
+        h1{
+            color:white;
+            text-align:center;
+            margin-top:850px;
+            margin-bottom:50px;
+            font-size:55px;
+            letter-spacing:4px;
+            text-shadow:0 5px 10px rgba(0,0,0,0.4);
+        }
+
+        h2{
+            color:white;
+            text-align:center;
+            margin-top:50px;
+            margin-bottom:30px;
+            font-size:40px;
+            letter-spacing:3px;
+            text-shadow:0 5px 10px rgba(0,0,0,0.4);
+        }
+
+        .image-container,
+        .image-container1{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            margin-top:60px;
+            flex-wrap:wrap;
+            padding-bottom:50px;
+        }
+
+        .image-container img{
+            width:220px;
+            height:280px;
+            object-fit:cover;
+            border-radius:15px;
+            transition:0.4s;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .image-container1 img{
+            width:280px;
+            height:280px;
+            object-fit:cover;
+            border-radius:15px;
+            transition:0.4s;
+            box-shadow:0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .image-container img:hover,
+        .image-container1 img:hover{
+            transform:scale(1.03);
+        }
+
+        .contact-section{
+            text-align:center;
+            color:white;
+            padding:80px 20px;
+            background:rgba(0,0,0,0.25);
+            margin-top:50px;
+        }
+
+        .contact-section h3{
+            font-size:45px;
+            margin-bottom:20px;
+            letter-spacing:3px;
+        }
+
+        .contact-section p{
+            font-size:18px;
+            max-width:700px;
+            margin:auto;
+            line-height:1.8;
+            margin-bottom:20px;
+        }
+
+        .contact-info{
+            font-size:20px;
+            font-weight:500;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">LUXE</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#trending">Collection</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#feed">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search">
+                <button class="btn btn-light" type="submit">Search</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<section id="trending">
+
+<h1>TRENDING ITEMS</h1>
+
+<div class="image-container">
+
+    <img src="hood.jpeg" alt="Fashion Image">
+
+    <img src="jacket.jpeg" alt="Fashion Image">
+
+    <img src="pant.jpeg" alt="Fashion Image">
+
+</div>
+
+</section>
+
+<section id="feed">
+
+<h2>CAPTURED ON FEED</h2>
+
+<div class="image-container1">
+
+    <img src="cap1.jpeg" alt="Fashion Image">
+
+    <img src="cap2.jpeg" alt="Fashion Image">
+
+    <img src="cap3.jpeg" alt="Fashion Image">
+
+</div>
+
+</section>
+
+<section id="contact" class="contact-section">
+    <h2>CONTACT US:</h2>
+
+    <h3>ABOUT LUXE</h3>
+
+    <p>
+        LUXE is a modern luxury fashion brand created for the young generation.
+        Our designs combine premium aesthetics, street fashion, elegance,
+        and modern lifestyle trends to create stylish fashion experiences.
+    </p>
+
+    <p>
+        We focus on minimal luxury, premium collections, and aesthetic fashion
+        inspiration that connects with Gen Z and modern fashion lovers.
+    </p>
+
+    <div class="contact-info">
+        Email : luxe@gmail.com
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
