@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4x4 Calculator</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .container{
+            width: 300px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+
+            background-color: rgb(168, 124, 124);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+            background-image:url("download10.jpeg") ;
+        }
+
+        .box{
+            background-color: rgba(7, 236, 45, 0.363);
+            color: white;
+            height: 60px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 22px;
+            border-radius: 5px;
+        }
+
+        .display{
+            grid-column: span 4;
+            background-color: orange;
+            color: black;
+            justify-content: flex-end;
+            padding-right: 15px;
+            font-size: 28px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Calculator</h1>
+
+    <div class="container">
+
+    
+        <div class="box display">0</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">/</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">*</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">-</div>
+        <div class="box">0</div>
+        <div class="box">C</div>
+        <div class="box">=</div>
+        <div class="box">+</div>
+
+    </div>
+
+</body>
+</html>
