@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-image: url("google.jpeg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            background-color: rgb(233, 9, 47);
+        }
+        .navbar{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: rgb(24, 63, 190);
+            font-size: 18px;
+        }
+        .navbar a:hover{
+            color: black;
+        }
+        .navbar img{
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        h1{
+            color: rgb(248, 248, 250);
+            font-size: 100px;
+            letter-spacing: 5px;
+            margin-bottom: 30px;
+        }
+        .search-container{
+            position: relative;
+            width: 700px;
+            max-width: 90%;
+        }
+        .search-box{
+            width: 100%;
+            padding: 15px 60px 15px 20px;
+            border: 1px solid #af3939;
+            border-radius: 30px;
+            outline: none;
+            font-size: 16px;
+            background: rgb(241, 228, 230);
+        }
+        .search-box:hover{
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        .icons{
+            position: absolute;
+            right: 20px;
+            top: 12px;
+            font-size: 22px;
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://mail.google.com/mail/?tab=rm&ogbl">Gmail</a>
+
+        <a href="https://www.google.com/imghp?hl=en&tab=ri&ogbl">
+            Images
+        </a>
+
+        <img src="google.png" alt="Profile" width="40">
+    </div>
+
+    <div class="main">
+
+        <h1>Google</h1>
+
+        <div class="search-container">
+
+            <input 
+                type="text" 
+                class="search-box"
+                placeholder="Search Google or type a URL">
+            
+
+            <div class="icons">
+                🎤 📸
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
